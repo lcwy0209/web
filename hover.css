@@ -1,0 +1,66 @@
+.name {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    font-size: 3.5rem;
+}
+
+hr{
+    width: 200px;
+    border: 2px solid grey;
+    border-radius: 3px
+}
+
+.mainarea{
+    height: 80vh;
+    width: 120vh;
+    margin: 10px auto;
+    padding: 15px 30px;
+    display: flex;
+    gap: 5px;
+}
+
+.pic{
+    border: 1px solid black;
+    height: 70vh;
+    width: 30vh;\
+    margin: 0 auto;
+    overflow:hidden;
+    opacity: 50%;
+    filter: grayscale(100%);
+}
+
+img{
+    height: 800px;
+    width: 600px;
+    object-fit: cover;
+    object-position: -920px -150px;
+}
+
+.pic:hover{
+    opacity: 100%;
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+    .pic1,
+    .pic2,
+    .pic3,
+    .pic4,
+    .pic5,
+    .pic6,
+    .pic7,
+    .pic8{
+    margin: 10px 5px 0 5px;
+    }
+
+
+@media only screen and (max-width:900px) {
+    .mainarea{
+        width: calc(75%);
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}  
